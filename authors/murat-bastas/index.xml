@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Murat Bastas on muratbastas</title>
+    <link>http://localhost:1313/authors/murat-bastas/</link>
+    <description>Recent content in Murat Bastas on muratbastas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jul 2019 22:10:03 +3000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/authors/murat-bastas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ActiveRecord modellerini projeler arası paylaştırmak</title>
+      <link>http://localhost:1313/2019/07/05/activerecord-modellerini-projeler-aras%C4%B1-payla%C5%9Ft%C4%B1rmak/</link>
+      <pubDate>Fri, 05 Jul 2019 22:10:03 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2019/07/05/activerecord-modellerini-projeler-aras%C4%B1-payla%C5%9Ft%C4%B1rmak/</guid>
+      <description>Günümüzde microservis, dağıtık uygulamar.. vs popüler olmaktan ziyade, otomatik ölçeklenen uygulamalar geliştirmek için gerekli bir yaklaşım halini aldı. Geliştirdiğimiz uygulamanın farklı görevleri olan kısımlarını farklı uygulamalar olarak dağıtabilmek için projeleri bölmeye başladık. Ben de böyle bir ihtiyaçtan yola çıkıp kompleks bir yapısı olan ve refactor gerektiren bir rails uygulamasını görevlerine göre ufak uygulamacıklara bölmeye başladım. Bunu yaparken en önemli sorunum kod kopyalamadan(duplicate) etmeden bu işin altından nasıl kalkarım, daha güzel bir deyişle data modelimi birden fazla rails ve ya rails olmayan projeler arasında nasıl paylaştırırım sorusuna odaklandım.</description>
+    </item>
+    
+    <item>
+      <title>Elixir OptionParser modülü ile CLI uygulaması</title>
+      <link>http://localhost:1313/2019/05/23/elixir-optionparser-mod%C3%BCl%C3%BC-ile-cli-uygulamas%C4%B1/</link>
+      <pubDate>Thu, 23 May 2019 22:12:05 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2019/05/23/elixir-optionparser-mod%C3%BCl%C3%BC-ile-cli-uygulamas%C4%B1/</guid>
+      <description>Merhabalar, bu yazımda elixir ile yazacağımız komut satırı uygulamalarında dışarıdan verilen argümanları nasıl parse edebileceğimizden bahsedeceğim. Neredeyse her komut satırı uygulaması yazabildiğiniz dilde olduğu gibi elixir&amp;rsquo;de de argümanları ayrıştırmak için OptionParser modülü ve hex.pm&amp;lsquo;den indirerek kullanabileceğimiz optimus gibi kütüphaneler var. Birlikte OptionParser ile örnek bir uygulama yapacağız. Bu uygulama belirlenen sıradaki fibonacci sayısını istenen renkte ekrana yazdıracak.
+mix new fib Diyerek başlayalım ve lib/fib dizininde cli.ex adında bir modül oluşturalım. İçinde main/1 şeklinde bir fonksiyon olsun.</description>
+    </item>
+    
+    <item>
+      <title>Elixir geliştirme ortamım</title>
+      <link>http://localhost:1313/2019/05/19/elixir-geli%C5%9Ftirme-ortam%C4%B1m/</link>
+      <pubDate>Sun, 19 May 2019 14:00:25 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2019/05/19/elixir-geli%C5%9Ftirme-ortam%C4%B1m/</guid>
+      <description>Merhabalar, bu yazıda Elixir geliştirirme ortamımı nasıl kurduğumdan, hangi araçları kullandığımdan vb konulardan bahsedeceğim. Elixir forum da hangi editor, hangi IDe, hangi versiyon yöneticisi vb çeşitli sorular ve cevaplar var. Ben hangilerini seçtim?
+Versiyon yönetimi Elixir, Erlang versiyon yönetici olarak asdf-vm kullanıyorum. Bundan şu yazıda da bahsetmiştim.
+asdf kurduysanız Elixir ve Erlang kurmak için aşağıdaki komutları çalıştırmanız yeterli gelecektir.
+asdf plugin-add erlang &amp;amp;&amp;amp; asdf plugin-add elixir asdf install erlang 21.3 asdf install elixir 1.</description>
+    </item>
+    
+    <item>
+      <title>Phoenix API uygulaması (part 4)</title>
+      <link>http://localhost:1313/2019/05/19/phoenix-api-uygulamas%C4%B1-part-4/</link>
+      <pubDate>Sun, 19 May 2019 13:37:02 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2019/05/19/phoenix-api-uygulamas%C4%B1-part-4/</guid>
+      <description>Bu dördüncü yazıya kadar okuyan her elixir meraklasının api endpointleri nasıl hazırlayacağını, yetkilendirme ve giriş yapmayı nasıl halledeceğini öğrendiğini varsayıyorum. Sadece bu kadarı bir uygulama geliştirmeye yetmeyecektir elbet ama eksikleri ilgililer tamamlayacaktır diye umuyorum. Bu serinin son bölümü bir api&#39;ın olmazsa olmazı, dökümanyasyonu üzerine olacak. Postman gibi araçlar kullanarak collection&amp;rsquo;lardan dökümantasyon üretmek mümkün tabii ki fakat yaygın olarak kullanılan swagger aracının phoenix projemize nasıl ekleneceğini anlatacağım.
+Önce mix.exs e gerekli paketleri ekleyelim.</description>
+    </item>
+    
+    <item>
+      <title>Phoenix API uygulaması (part 3)</title>
+      <link>http://localhost:1313/2019/05/12/phoenix-api-uygulamas%C4%B1-part-3/</link>
+      <pubDate>Sun, 12 May 2019 12:15:12 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2019/05/12/phoenix-api-uygulamas%C4%B1-part-3/</guid>
+      <description>İkinci bölümünü neredeyse 1 ay önce yayınladığım phoenix framework API uygulaması serisinin üçüncü yazısıdır.
+İkinci bölümde oauth ile token alıp rotalarımızı bu token ile korumayı öğrenmiştik. Bu bölümde de kayıt olma esnasında e-posta göndererek kullanıcıların e-posta adreslerini doğrulama işlemlerini yapacağız.
+Yaptığım araştırmalar sonucunda Phoenix&amp;rsquo;e e-posta gönderme yetenekleri eklemek için en kullanışlı hex paketinin bamboo olduğunu düşünüyorum. Bu yüzden bamboo ile development ortamında Rails&amp;rsquo;te kullandığımız letter_opener gibi çalışan local adaptörü, production ortamında ise SMTP adaptörü kullanacağız.</description>
+    </item>
+    
+    <item>
+      <title>Phoenix API uygulaması (part 2)</title>
+      <link>http://localhost:1313/2019/04/14/phoenix-api-uygulamas%C4%B1-part-2/</link>
+      <pubDate>Sun, 14 Apr 2019 17:35:12 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/14/phoenix-api-uygulamas%C4%B1-part-2/</guid>
+      <description>İlk halini dün yayınladığım phoenix framework API uygulaması serisinin ikinci yazısıdır.
+Dün basitçe crud işlemleri yapan bir endpoint hazırlamıştık. Tabi ki sırada bir API ın olmazsa olmazı authentication işlemlerini nasıl yapacağımızdan bahsedeceğim.
+Öncelikle ihtiyaç duyacağımız paketlerden bahsedelim. Ruby yazanlar ve Rails ile uygulama geliştirenler bilirler plataformatec&amp;rsquo;in geliştirdiği ve José Valim abimizin, yani Elixir dilinin yaratıcısının çok büyük katkıları olan devise adında bir gem var ki authentication adına ne var ise her şeyi 3-5 generator komutu ile saniyeler içerisinde halledebiliyorsunuz.</description>
+    </item>
+    
+    <item>
+      <title>Phoenix API uygulaması (part 1)</title>
+      <link>http://localhost:1313/2019/04/13/phoenix-api-uygulamas%C4%B1-part-1/</link>
+      <pubDate>Sat, 13 Apr 2019 14:16:34 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2019/04/13/phoenix-api-uygulamas%C4%B1-part-1/</guid>
+      <description>Merhabalar, uzun bir süredir yan projelerde kullanarak öğrenmeye çalıştığım Elixir dili için bir rehber niteliğinde notlar paylaşacağım yazı serime hoş geldiniz. Bu yazıya sıklıkla Ruby on Rails ile karşlılaştırılmaları yapılan Phoenix web framework ile API-only bir uygulama yazma rehberi olarak bakabilirsiniz. Hazırsam başlayayım&amp;hellip; :)
+Yeni bir Phoenix projesi oluşturma Bu adımda Elixir, Erlang ve Phoenix framework&#39;ün sisteminizde kurulu olduğunu varsayıyorum. Değilse eğer sizi şuraya yönlendirebilirim.
+Aşağıdaki komutu terminalimizde çalıştırarak bir phoenix projesi açalım.</description>
+    </item>
+    
+    <item>
+      <title>ActiveRecord Performans Pratikleri</title>
+      <link>http://localhost:1313/2019/03/12/activerecord-performans-pratikleri/</link>
+      <pubDate>Tue, 12 Mar 2019 11:38:34 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2019/03/12/activerecord-performans-pratikleri/</guid>
+      <description>count, present? ve where metodlari yanlis kullanildiginda genellikle N+1 query problemine yol acar.
+.count pratikleri count metodu her zaman sql query atarak count almaya calisir, bu gereksiz sql querysinden kurtulmak icin asagidaki metodlari inceleyebiliriz.
+size
+size metodu basit bir ruby array countu calistirarak elimizdeki recordset te kac item oldugunu sayar. size attigimiz data eger bir active record relation collection&amp;rsquo;u ise asagidaki implementasyona bakalim.
+# File activerecord/lib/active_record/relation.rb, line 210 def size loaded?</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails ve Docker</title>
+      <link>http://localhost:1313/2018/03/04/ruby-on-rails-ve-docker/</link>
+      <pubDate>Sun, 04 Mar 2018 11:38:34 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2018/03/04/ruby-on-rails-ve-docker/</guid>
+      <description>Ben bu container, image vs işlerine çok geç başlamış olabilirim belki fakat yine de benimle aynı durumda, ya da benden daha bihaber durumda olan dolu arkadaşımız olabileceğini ve belki birisi denk gelir de bu yazıya docker kullanmayı öğrenirken aldığım notlara ihtiyaç duyabilir diye düşünerek yaklaşık 1 aylık docker uğraşlarımdan öğrendiklerimi ve bulduğum kaynakları paylaşmak istedim.
+Bu blog üç bölümden oluşacak. İlk bölümü başlıktaki şekilde bir Rails uygulamasını docker ile ayağa kaldırmak, ikinci bölüm redis ve sidekiq servislerini hazırlamak ve üçüncü bölüm bu uygulamayı docker ile deploy etmek.</description>
+    </item>
+    
+    <item>
+      <title>Alias ne iş yapıyor?</title>
+      <link>http://localhost:1313/2017/09/02/alias-ne-i%C5%9F-yap%C4%B1yor/</link>
+      <pubDate>Sat, 02 Sep 2017 10:57:12 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2017/09/02/alias-ne-i%C5%9F-yap%C4%B1yor/</guid>
+      <description>Eğer benim gibi siz de bir başkalarının dotfiles repolarını kullanıyor iseniz bu konu size bazı durumlarda lazım olabilir.
+Örneğin ben Yan Pritzker&amp;lsquo;e ait olan YADR(Yet another dotfiles repo) deposunu kullanıyorum. Neden bunu kullanıyorsun diyen olursa cevabı Prezto. Her neyse, bildiğiniz gibi bu tür shell konfigurasyonlarında tonla ayar, eklenti, hack ve hayatımızı kolaylaştıran alias&amp;rsquo;lar var.
+Bu alias&amp;rsquo;ları biz tanımlamadığımız için bazen benim gibi şuna benzer ikilemler yaşayabilirsiniz.
+$ gst Git status a bakacaktım ama 😏</description>
+    </item>
+    
+    <item>
+      <title>Rails webpacker ile vuejs</title>
+      <link>http://localhost:1313/2017/07/30/rails-webpacker-ile-vuejs/</link>
+      <pubDate>Sun, 30 Jul 2017 12:42:31 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2017/07/30/rails-webpacker-ile-vuejs/</guid>
+      <description>Öncelikle - Rails 5.1 Loving JavaScript
+Merhaba yukarıda linkini verdiğim yazıda da görebileceğiniz gibi Rails 5.1 versiyonundan itibaren rails/webpacker aracılığıyla projelerimizi React, Angular, Elm ve ya Vuejs yazabileceğimiz şekilde oluşturma imkanına sahibiz. Bu yazımda vuejs ile basit bir proje oluşturarak öğrendiklerimi anlatacağım. Aklımda örnek proje olarak github api v3 kullanarak repo arayan basit bir uygulama yapmak var.
+Projeyi oluşturalım&amp;hellip; rails new webpacker-vue-example --webpack=vue -B cd webpacker-vue-example Kısa şekilde anlatmak gerekirse —webpack=vue ile projemizde vuejs kullanacağımızı söyledik ve webpacker bizim için gerekli tüm konfigurasyonları yaptı.</description>
+    </item>
+    
+    <item>
+      <title>git reset --hard ile commitlenmemiş dosyaları kaybedersek?</title>
+      <link>http://localhost:1313/2017/04/02/git-reset-hard-ile-commitlenmemi%C5%9F-dosyalar%C4%B1-kaybedersek/</link>
+      <pubDate>Sun, 02 Apr 2017 20:30:33 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2017/04/02/git-reset-hard-ile-commitlenmemi%C5%9F-dosyalar%C4%B1-kaybedersek/</guid>
+      <description>Çok acı bir anı sahibi olabilirsiniz. Evet bu acı anımı anlatacağım şimdi&amp;hellip;
+Yine bir proje üzerindeyim(deneysel). Uğraştım didindim 2 gece boyunca ve başarılı sonuç aldım. Github&amp;rsquo;da bir repo açayım(private) buna dedim ve açtım. Remote url&amp;rsquo;mi ekledim ve&amp;hellip;
+git add . #........ Dosyaları ekledikten sonra dur geri alayım önce vendoru vs ignore edeyim dedim.
+git reset --hard #......... 😨 Dedim ve o an malum pişmanlığı tüm dosyaları kaybederek yaşadım. Soğuk soğuk terlemeye başladım.</description>
+    </item>
+    
+    <item>
+      <title>Rails API-only uygulama ve token authentication</title>
+      <link>http://localhost:1313/2017/03/30/rails-api-only-uygulama-ve-token-authentication/</link>
+      <pubDate>Thu, 30 Mar 2017 19:19:22 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2017/03/30/rails-api-only-uygulama-ve-token-authentication/</guid>
+      <description>Rails ile sadece API &amp;ndash;API-only&amp;ndash; uygulama yazmak istiyorsanız terminalde rails g proje --api ile projeyi oluşturmalısınız. (bkz: edgeguides)
+Eminim rails ile uygulama geliştiren hemen hemen herkes kullanıcı işlemleri için devise kullanıyordur. Devise daha ben rails ile geliştirmeye başlamadan çok evvel TokenAuthenticatable metoduna sahipmiş fakat bu metod kaldırılmış.
+Bu wiki sayfasında token ile oturum açmak için birkaç yol verilmiş. Ama API-only uygulamada her denememde CookieStore ve SessionStore hatası aldım bu gemler ile.</description>
+    </item>
+    
+    <item>
+      <title>DO Ubuntu sunucu kurulumu (part 2)</title>
+      <link>http://localhost:1313/2017/03/25/do-ubuntu-sunucu-kurulumu-part-2/</link>
+      <pubDate>Sat, 25 Mar 2017 09:08:12 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2017/03/25/do-ubuntu-sunucu-kurulumu-part-2/</guid>
+      <description>Seri:
+ DO Ubuntu sunucu kurulumu (part 1) DO Ubuntu sunucu kurulumu (part 2)  Aradan bir hayli zaman geçti fakat yoğunluktan devam etme fırsatım olmadı. Önceki bölümde en son vestacp kurulumunu yapıp bırakmıştık. Bununla bitmedi tabii ki. Sırada hostname ayarlayıp domain yönlendirmek ve hostinglerini açarak e-mail, veritabanı vs açmak kaldı. Vesta üzerinden yapılacak işler(hosting, e-mail, veritabanı aç kapa) çok basit olduğu için daha önce belirttiğim gibi o konuya girmeyeceğim.</description>
+    </item>
+    
+    <item>
+      <title>DO Ubuntu sunucu kurulumu (part 1)</title>
+      <link>http://localhost:1313/2017/01/01/do-ubuntu-sunucu-kurulumu-part-1/</link>
+      <pubDate>Sun, 01 Jan 2017 17:07:12 +3000</pubDate>
+      
+      <guid>http://localhost:1313/2017/01/01/do-ubuntu-sunucu-kurulumu-part-1/</guid>
+      <description>Seri:
+ DO Ubuntu sunucu kurulumu (part 1) DO Ubuntu sunucu kurulumu (part 2)  Geçtiğimiz hafta x firmasından aldığımız sunucu hizmetini sonlandırıp kendi sunucumuzu digitalocean&amp;rsquo;da kurmaya karar verdik. Eski sunucumuz CentOS 6.7 x64 idi. Bu sefer ubuntu kurmaya karar verdim. Digitalocean&amp;rsquo;da 20 dolarlık ubuntu 14.04 makine oluşturduktan sonra ssh root@xxx.xxx.xxx.xxx ile sunucuya bağlandım. Sonra…
+Ssh bağlantı yapılandırmam İlk iş root kullanıcısını kullanmamak için yeni bir kullanıcı oluşturup sudoers‘e eklemek oldu.</description>
+    </item>
+    
+    <item>
+      <title>Başarılı bir capistrano alternatifi: mina</title>
+      <link>http://localhost:1313/2016/10/16/ba%C5%9Far%C4%B1l%C4%B1-bir-capistrano-alternatifi-mina/</link>
+      <pubDate>Sun, 16 Oct 2016 19:20:00 +0300</pubDate>
+      
+      <guid>http://localhost:1313/2016/10/16/ba%C5%9Far%C4%B1l%C4%B1-bir-capistrano-alternatifi-mina/</guid>
+      <description>Merhaba, çok uzun zaman önce planladığım ama bir fırsat bulup da yazmaya başlayamadığım ilk yazımı yazmanın vakti geldi de geçiyor.
+Bu yazımda Ruby on Rails ile yazdığım projemi capistrano ile deploy etmeye çalışırken daha basit configure edebildiğim mina ile nasıl deploy ettiğimi anlatacağım.
+Hazırlık Öncelikle mina sistemimizde kurulu olmalı. gem install mina komutu ile mina gem&amp;rsquo;ini kuruyoruz. Her hangi bir izin(permission) hatası alırsanız gem&amp;rsquo;i sudo ile kurabilirsiniz. Benim deploy edeceğim projenin adı projem olsun.</description>
+    </item>
+    
+  </channel>
+</rss>

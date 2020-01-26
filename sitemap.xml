@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:1313/2019/07/05/activerecord-modellerini-projeler-aras%C4%B1-payla%C5%9Ft%C4%B1rmak/</loc>
+    <lastmod>2019-07-05T22:10:03+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/authors/</loc>
+    <lastmod>2019-07-05T22:10:03+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/authors/murat-bastas/</loc>
+    <lastmod>2019-07-05T22:10:03+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2019-07-05T22:10:03+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2019-07-05T22:10:03+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/05/23/elixir-optionparser-mod%C3%BCl%C3%BC-ile-cli-uygulamas%C4%B1/</loc>
+    <lastmod>2019-05-23T22:12:05+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/05/19/elixir-geli%C5%9Ftirme-ortam%C4%B1m/</loc>
+    <lastmod>2019-05-19T14:00:25+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/05/19/phoenix-api-uygulamas%C4%B1-part-4/</loc>
+    <lastmod>2019-05-19T13:37:02+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/05/12/phoenix-api-uygulamas%C4%B1-part-3/</loc>
+    <lastmod>2019-05-12T12:15:12+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/14/phoenix-api-uygulamas%C4%B1-part-2/</loc>
+    <lastmod>2019-04-14T17:35:12+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/13/phoenix-api-uygulamas%C4%B1-part-1/</loc>
+    <lastmod>2019-04-13T14:16:34+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/04/13/hepsine-h%C3%BCkmedecek-tek-versiyon-y%C3%B6neticisi-asdf/</loc>
+    <lastmod>2019-04-13T11:13:24+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2019/03/12/activerecord-performans-pratikleri/</loc>
+    <lastmod>2019-03-12T11:38:34+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2018/03/04/ruby-on-rails-ve-docker/</loc>
+    <lastmod>2018-03-04T11:38:34+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/09/02/alias-ne-i%C5%9F-yap%C4%B1yor/</loc>
+    <lastmod>2017-09-02T10:57:12+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/07/30/rails-webpacker-ile-vuejs/</loc>
+    <lastmod>2017-07-30T12:42:31+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/04/02/git-reset-hard-ile-commitlenmemi%C5%9F-dosyalar%C4%B1-kaybedersek/</loc>
+    <lastmod>2017-04-02T20:30:33+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/03/30/rails-api-only-uygulama-ve-token-authentication/</loc>
+    <lastmod>2017-03-30T19:19:22+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/03/25/do-ubuntu-sunucu-kurulumu-part-2/</loc>
+    <lastmod>2017-03-25T09:08:12+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2017/01/01/do-ubuntu-sunucu-kurulumu-part-1/</loc>
+    <lastmod>2017-01-01T17:07:12+30:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2016/10/16/ba%C5%9Far%C4%B1l%C4%B1-bir-capistrano-alternatifi-mina/</loc>
+    <lastmod>2016-10-16T19:20:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+  
+</urlset>
