@@ -1,0 +1,7 @@
+[submodule "themes/hugo-theme-novela"]
+	path = themes/hugo-theme-novela
+	url = git@github.com:forestryio/hugo-theme-novela.git
+[submodule "public"]
+	path = public
+	url = git@github.com:murat/murat.github.io.git
+	branch = master

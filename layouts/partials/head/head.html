@@ -1,0 +1,71 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="/images/favicon.svg">
+  {{ $style := resources.Get "scss/global.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ $prism := resources.Get "css/prism.css" }}
+  <link rel="stylesheet" href="{{ $prism.RelPermalink }}" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  {{ partial "seo/print.html" . }}
+  {{ with .Params.forestry_instant_preview_id }}
+  {{- safeHTML (printf "<meta property='forestry_instant_preview_id' content='%s'>" .) -}}
+  {{ end -}}
+
+  <script>localStorage.setItem("isLight", '{{ .Site.Params.isLight }}')</script>
+
+  <style>
+    p, .code-toolbar, ul, .article-header {
+      max-width: 96%;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: center;
+    }
+    .section {
+      padding: 2rem;
+    }
+    .subheading-container { 
+      margin-bottom: 1rem;
+    }
+    .article-hero-heading {
+      max-width: 96%;
+      text-align: center;
+    }
+    .articles-list-container-alt .post-row .article-link .article-data-outer .article-data { max-width: 100% !important; width: 100% !important; }
+    .post-row > a { margin: 1rem 0 !important; }
+    .article-data .article-title { margin: 1rem 0 !important }
+    .article-header, .article-title {
+      padding-left: initial;
+    }
+    .article-hero-subtitle {
+      display: flex;
+      justify-content: center;
+    }
+    h1, h2, h3, h4, h5, h6 { max-width: 96%; }
+    @media screen and (max-width: 540px) {
+      .article-header { margin: 10px 0; padding: 0; }
+      .article-header h1 { padding: 0; }
+      .article-link { box-shadow: none; }
+      .article-title { padding: 0; margin: 10px 0; }
+      .article-excerpt { display: none; }
+      .article-metadata { padding: 0; }
+      h1, h2, h3, h4, h5, h6 { padding: 0 1rem; }
+    }
+    p>code {
+      color: #f8f8f2;
+      background-color: #919191;
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+
+    #articleContent {
+      padding: 0 0 35px;
+    }
+
+    #articleContent>figure>img {
+      max-width: 100% !important;
+    }
+  </style>
+</head>

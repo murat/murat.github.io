@@ -1,0 +1,39 @@
+baseURL: "http://localhost:1313"
+languageCode: "en-us"
+title: "muratbastas"
+theme: "hugo-theme-novela"
+pygmentsstyle: 'monokai'
+paginate: 12
+params:
+  isLight: 'true'
+  defaultView: 'list'
+  disabledThemeFeatures:
+    - themeColorButton
+    - listGridButton
+    - progressBar
+    - copyButton
+
+social:
+  twitter: "https://twitter.com/muratbastas"
+  medium: "https://medium.com/@muratbastas"
+  linkedin: "https://linkedin.com/in/muratbastas"
+  github: "https://github.com/murat"
+
+taxonomies:
+  author: authors
+  tag: tags
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
+    tabWidth: 4
+
+permalinks:
+  post: "/:year/:month/:day/:slug/"
