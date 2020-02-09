@@ -6,10 +6,19 @@
     <description>Recent content in Posts on muratbastas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jul 2019 22:10:03 +3000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 14:34:05 +0300</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows Gelistirme Ortami</title>
+      <link>http://localhost:1313/2020/02/09/windows-gelistirme-ortami/</link>
+      <pubDate>Sun, 09 Feb 2020 14:34:05 +0300</pubDate>
+      
+      <guid>http://localhost:1313/2020/02/09/windows-gelistirme-ortami/</guid>
+      <description>Geliştirme için uzun süredir linux/unix kullanan birisi olarak desktop pc topladıktan sonra oyun oynama ihtiyacımı da görebileceğim bir ortam kurmaya çalıştım. Steam&amp;rsquo;de linux uyumlu oyunlar olduğundan bana yeter diyerek manjaro linux ile geliştirme ortamımı kurdum, non-free nvidia driverlarını da kurduğum halde oyun oynarken donmalar, kasmalar yaşıyordum. Tüm çabalarıma rağmen ekran kartımın performansını linux üzerinde tam manasıyla değerlendiremedim. Haliyle windows ile dual-boot yapmak durumunda kaldım. Geliştirme zamanımı linuxta, oyun zamanımı windowsta değerlendireyim diyordum.</description>
+    </item>
     
     <item>
       <title>ActiveRecord modellerini projeler arası paylaştırmak</title>
