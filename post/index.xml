@@ -6,10 +6,19 @@
     <description>Recent content in Posts on muratbastas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Feb 2020 14:34:05 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2020 11:18:05 +0300</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Firefox medya tuşları ve toby eklentisi</title>
+      <link>http://localhost:1313/2020/04/08/firefox-medya-tu%C5%9Flar%C4%B1-ve-toby-eklentisi/</link>
+      <pubDate>Wed, 08 Apr 2020 11:18:05 +0300</pubDate>
+      
+      <guid>http://localhost:1313/2020/04/08/firefox-medya-tu%C5%9Flar%C4%B1-ve-toby-eklentisi/</guid>
+      <description>Klavyelerimizin fonksiyon tuşları, medya tuşları genellikle spotify, itunes, vlc player gibi müzik, video uygulamalarında süper çalışıyor. Ne zamandır olduğunu bilmesem de bir süredir youtube videolarını kontrol etmeye de yarıyordu. Firefox kullanıyordum uzun bir süredir ve youtube music kullanmaya başladıktan sonra media tuşlarının youtube music&amp;rsquo;e müdahale edemediğini farkettiğimde sıkıcı bir süreç ile google chrome&amp;rsquo;a geçiş yapmak zorunda kalmıştım. Bugün firefox&amp;rsquo;ta chrome&amp;rsquo;un chrome://flags ine benzer bir konfigurasyon arayüzü olan about:config i kurcalarken aşağıdaki ayarı buldum.</description>
+    </item>
     
     <item>
       <title>Windows Gelistirme Ortami</title>

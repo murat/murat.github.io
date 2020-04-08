@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Firefox medya tuşları ve toby eklentisi · muratbastas</title>
+
+
+
+<link rel="stylesheet" href="/css/rocinante.css" />
+
+
+
+<body>
+    <header><h2>
+  
+    <a href="http://localhost:1313">‹ muratbastas</a>
+  
+</h2>
+</header>
+    <main>
+
+    <div class="post">
+        <div class="title-group">
+            <div class="title">
+                <h1>Firefox medya tuşları ve toby eklentisi</h1>
+            </div>
+            <div class="date"><h5>Apr 08, 2020</h5></div>
+        </div>
+        <article class="content">
+            <p>Klavyelerimizin fonksiyon tuşları, medya tuşları genellikle spotify, itunes, vlc player gibi müzik, video uygulamalarında süper çalışıyor. Ne zamandır olduğunu bilmesem de bir süredir youtube videolarını kontrol etmeye de yarıyordu. Firefox kullanıyordum uzun bir süredir ve youtube music kullanmaya başladıktan sonra media tuşlarının youtube music&rsquo;e müdahale edemediğini farkettiğimde sıkıcı bir süreç ile google chrome&rsquo;a geçiş yapmak zorunda kalmıştım. Bugün firefox&rsquo;ta chrome&rsquo;un <code>chrome://flags</code> ine benzer bir konfigurasyon arayüzü olan <code>about:config</code> i kurcalarken aşağıdaki ayarı buldum.</p>
+<pre><code>media.hardwaremediakeys.enabled = true
+</code></pre><p>Ve artık memnuniyetle firefox kullanmaya dönebilirdim. Derken uzun bir süredir chrome&rsquo;da bookmark yöneticisi olarak kullandığım toby eklentisi ile sorun yaşadım, eskiden bunun yerine oneTab kullanıyordum. Ama toby tüm cihazlarımla sync olduğu için daha kullanışlıydı ve chrome&rsquo;da yeni alışkanlığım haline gelmişti. Toby malesef firefox eklenti mağazasında yok, ama sitesinde de gettoby.com/firefox şeklinde de bir bağlantı var, fakat çalışmıyor. Archive.org da o sayfanın snapshotlarını mı aramadım, twitter&rsquo;dan toby&rsquo;e mention mu atmadım, fakat çözüm bulamadım ve oneTab kullanmaya döndüm. Şimdi sıradaki sorunum toby&rsquo;den export ve oneTab&rsquo;e import. Bunun için de toby&rsquo;nin localStorage&rsquo;de nerede data sakladığını araştırdım, derken armut pişip ağzıma düştü ve <a href="https://gist.github.com/krishpop/8a954b171a5403117bf0f2fdda0a8e90" target="_blank">şu gist</a> ile karşılaştım. Json dosyasına aldıktan sonra oneTab&rsquo;e import etmek kaldı. oneTab aşağıdaki şekilde bir import istiyor.</p>
+<pre><code>https://murat.github.io | Murat Bastas's homepage
+https://github.com/murat | murat (Murat Bastas)
+
+https://twitter.com/muratbastas | Murat Bastas (@muratbastas)
+</code></pre><p>Boş satırlar farklı bir grup oluyor. Fakat toby&rsquo;den aldığım export bir json dosyası ve aşağıdakine benziyor.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-json" data-lang="json"><span style="color:#111">{</span>
+  <span style="color:#f92672">&#34;lists&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+    <span style="color:#111">{</span>
+      <span style="color:#f92672">&#34;title&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Mar 10 at 12:27&#34;</span><span style="color:#111">,</span>
+      <span style="color:#f92672">&#34;cards&#34;</span><span style="color:#111">:</span> <span style="color:#111">[</span>
+        <span style="color:#111">{</span>
+          <span style="color:#f92672">&#34;title&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;Murat Bastas&#39;s homepage&#34;</span><span style="color:#111">,</span>
+          <span style="color:#f92672">&#34;url&#34;</span><span style="color:#111">:</span> <span style="color:#d88200">&#34;https://murat.github.io&#34;</span><span style="color:#111">,</span>
+          <span style="color:#960050;background-color:#1e0010">...</span>
+        <span style="color:#111">},</span>
+        <span style="color:#960050;background-color:#1e0010">...</span>
+    <span style="color:#960050;background-color:#1e0010">}</span><span style="color:#111">,</span>
+    <span style="color:#960050;background-color:#1e0010">...</span>
+  <span style="color:#111">]</span>
+<span style="color:#111">}</span>
+</code></pre></div><p>Bu json&rsquo;u da jq aracı ile oneTab formatına dönüştürmek için aşağıdaki gibi parse ettim,</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell">cat backup.json <span style="color:#111">|</span> jq --raw-output <span style="color:#d88200">&#39;.lists[].cards[] as $card | &#34;\($card.url) | \($card.title)&#34;&#39;</span>
+</code></pre></div><p>Çıktısını da oneTab&rsquo;den import ettikten sonra başarıyla bookmark listemi de almış oldum. Sonuç olarak şuan firefox kullanmam önünde hiç bir engel bırakmamış bulunuyorum. Yaşasın Quantum 😍.</p>
+
+        </article>
+        
+    </article>
+
+
+    </main>
+    <footer>
+  <div class="content-container">
+    <div class="content">Murat Bastas | Software Developer <a href="https://vispera.co" target="_blank">@Vispera</a>.
+
+
+  <p class="horizontal-links"><a href="/resume.pdf"
+       
+       
+      >Resume</a><a href="/contact"
+       
+        class="email-hook" id="about-email" title="Click to show email" 
+      >Email</a></p>
+
+  <p class="horizontal-links"><a href="https://github.com/murat"
+        target="_blank" 
+       
+      >Github</a><a href="https://twitter.com/muratbastas"
+        target="_blank" 
+       
+      >Twitter</a><a href="https://linkedin.com/in/muratbastas"
+        target="_blank" 
+       
+      >LinkedIn</a></p>
+
+</div>
+  </div>
+</footer>
+    
+    <script>
+      const emailId = atob("");
+    </script>
+    <script src="/js/rocinante.min.js"></script>
+  </body>
+</html>
