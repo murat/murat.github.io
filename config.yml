@@ -1,27 +1,9 @@
 baseURL: "http://localhost:1313"
 languageCode: "en-us"
+theme: "rocinante"
 title: "muratbastas"
-theme: "hugo-theme-novela"
-pygmentsstyle: 'monokai'
+
 paginate: 12
-params:
-  isLight: 'true'
-  defaultView: 'list'
-  disabledThemeFeatures:
-    - themeColorButton
-    - listGridButton
-    - progressBar
-    - copyButton
-
-social:
-  twitter: "https://twitter.com/muratbastas"
-  medium: "https://medium.com/@muratbastas"
-  linkedin: "https://linkedin.com/in/muratbastas"
-  github: "https://github.com/murat"
-
-taxonomies:
-  author: authors
-  tag: tags
 
 markup:
   highlight:
@@ -32,8 +14,35 @@ markup:
     lineNos: false
     lineNumbersInTable: true
     noClasses: true
-    style: monokai
-    tabWidth: 4
+    tabWidth: 2
+    style: monokailight
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  about: 'Murat Bastas | Software Developer [@Vispera](https://vispera.co).'
+  links:
+    - link:
+        - name: Resume
+          href: /resume.pdf
+        - name: Email
+          href: /contact
+          smart_email_link: true
+    - link:
+        - name: Github
+          href: 'https://github.com/murat'
+          new_tab: true
+        - name: Twitter
+          href: 'https://twitter.com/muratbastas'
+          new_tab: true
+        - name: LinkedIn
+          href: 'https://linkedin.com/in/muratbastas'
+          new_tab: true
+
+taxonomies:
+  author: authors
+  tag: tags
 
 permalinks:
   post: "/:year/:month/:day/:slug/"

@@ -1,6 +1,6 @@
-[submodule "themes/hugo-theme-novela"]
-	path = themes/hugo-theme-novela
-	url = git@github.com:forestryio/hugo-theme-novela.git
+[submodule "themes/rocinante"]
+	path = themes/rocinante
+	url = https://github.com/mavidser/hugo-rocinante.git
 [submodule "public"]
 	path = public
 	url = git@github.com:murat/murat.github.io.git
