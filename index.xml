@@ -6,10 +6,20 @@
     <description>Recent content on muratbastas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2020 11:18:05 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 21:01:05 +0300</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WSL2 içinde linux desktop ortamı, GTK uygulamaları ve JetBrains IDE&#39;leri</title>
+      <link>http://localhost:1313/2020/04/09/wsl2-i%C3%A7inde-linux-desktop-ortam%C4%B1-gtk-uygulamalar%C4%B1-ve-jetbrains-ideleri/</link>
+      <pubDate>Thu, 09 Apr 2020 21:01:05 +0300</pubDate>
+      
+      <guid>http://localhost:1313/2020/04/09/wsl2-i%C3%A7inde-linux-desktop-ortam%C4%B1-gtk-uygulamalar%C4%B1-ve-jetbrains-ideleri/</guid>
+      <description>Tam 2 ay önce windows içinde linux geliştirme ortamımı nasıl kurduğumu anlattığım bir yazı yazmıştım. Bu yazıda windows 10 insider ile WSL2 kurulumu, intel sanallaştırma hizmetlerinin BIOS üzerinden aktif edilmesi, docker for windows edge kurulumu(artık edge kanalından kurmak zorunda değilsiniz) ve wsl içinde docker kullanımını anlatmıştım. Bu yazımda da WSL içinde bir linux desktop ortamı kurup, gui uygulamalarını nasıl windows içinde çalıştırabileceğimizi anlatacağım.
+Öncelikle linux görüntü sunucusu olan &amp;ldquo;X server&amp;rdquo; nedir diye merak edenlere bir tr.</description>
+    </item>
     
     <item>
       <title>Firefox medya tuşları ve toby eklentisi</title>
