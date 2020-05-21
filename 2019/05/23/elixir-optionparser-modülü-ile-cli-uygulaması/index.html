@@ -52,7 +52,7 @@
     <span style="color:#f92672">]</span>
   end
   ...
-</code></pre></div><p><code>escript</code> tanımlamasını yaptıktan sonra <code>mix escript.build</code> task'ını çalıştırdığımızda <code>fib</code> adında bir çalıştırabilir dosya üretecektir.</p>
+</code></pre></div><p><code>escript</code> tanımlamasını yaptıktan sonra <code>mix escript.build</code> task&rsquo;ını çalıştırdığımızda <code>fib</code> adında bir çalıştırabilir dosya üretecektir.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-zsh" data-lang="zsh">./fib
 <span style="color:#f92672">[]</span>
 
@@ -95,7 +95,7 @@
 <h2 id="doğrulama-ve-varsayılan-değerler">Doğrulama ve varsayılan değerler</h2>
 <p>Örnek uygulamamız verilen order sırasındaki fibonacci sayısını verilen color renginde ekrana yazdıracak, bazı durumlarda aldığımız argümanları kontrol etmemiz gerekir. Örneğin fibonacci sayılarını hesaplamayı nerede bırakacağımızı uygulamamıza belirtmezsek canımız sıkılabilir. Color değeri geçerli bir renk olmazsa uygulamamız patlayabilir. Bu durumda zorunlu argümanların varlığını ve geçerliliğini kontrol edip, gerekiyorsa varsayılan değerler ile değiştirilmesi gerekebilir.</p>
 <p>Bunu <code>optimus</code> gibi hex paketleri ile daha kolay yapabiliriz ama ben <code>OptionParser</code> ile kendimiz nasıl yapabiliriz bunu göstereceğim.</p>
-<p>Modülümüze <code>@args</code> adında bir <a href="https://elixir-lang.org/getting-started/module-attributes.html" target="_blank"><code>attribute</code></a> ekleyelim ve <code>OptionParser</code>in options'ını bir fonksiyona çıkartalım.</p>
+<p>Modülümüze <code>@args</code> adında bir <a href="https://elixir-lang.org/getting-started/module-attributes.html" target="_blank"><code>attribute</code></a> ekleyelim ve <code>OptionParser</code>in options&rsquo;ını bir fonksiyona çıkartalım.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-ex" data-lang="ex"><span style="color:#111">defmodule</span> <span style="color:#75af00">Fib.CLI</span> <span style="color:#111">do</span>
   <span style="color:#75af00">@args</span> <span style="color:#111">[</span>
     <span style="color:#111">[</span><span style="color:#d88200">order</span><span style="color:#111">:</span> <span style="color:#111">[</span><span style="color:#d88200">type</span><span style="color:#111">:</span> <span style="color:#d88200">:integer</span><span style="color:#111">,</span> <span style="color:#d88200">short</span><span style="color:#111">:</span> <span style="color:#d88200">:n</span><span style="color:#111">,</span> <span style="color:#d88200">required</span><span style="color:#111">:</span> <span style="color:#111">true</span><span style="color:#111">,</span> <span style="color:#d88200">default</span><span style="color:#111">:</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#d88200">max</span><span style="color:#111">:</span> <span style="color:#ae81ff">1000</span><span style="color:#111">]],</span>

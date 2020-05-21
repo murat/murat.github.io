@@ -32,14 +32,14 @@
 <p>Çokça detaylı sıkıcı bir kaynak olmayacak. Çünkü:</p>
 <ol>
 <li><a href="https://www.gokhansengun.com/docker-nedir-nasil-calisir-nerede-kullanilir/" target="_blank">Docker nedir, ne işe yarar, nerede nasıl kullanılır?</a></li>
-<li><a href="https://www.gokhansengun.com/docker-yeni-image-hazirlama/" target="_blank">Yeni bir docker image'ı nasıl hazırlanır?</a></li>
+<li><a href="https://www.gokhansengun.com/docker-yeni-image-hazirlama/" target="_blank">Yeni bir docker image&rsquo;ı nasıl hazırlanır?</a></li>
 <li><a href="https://www.gokhansengun.com/docker-compose-nasil-kullanilir/" target="_blank">Docker-compose hangi amaçlarla kullanılır?</a></li>
 </ol>
 <p>3 başlıkta <a href="https://twitter.com/gokhansengun" target="_blank">Gökhan hoca</a> her şeyi detaylı anlatmış.</p>
 <p>Rails uygulamam bir postgresql veritabanına sahip. Session, cache ve queue için redis, background jobları için sidekiq kullanıyorum.</p>
 <p>İlk iş bir Dockerfile oluşturmak oldu, ilk denemelerimde slim ve ya slim-stretch image&rsquo;larını kullanmıştım. Sonra image&rsquo;larımın ne kadar küçük olursa o kadar iyi olacağı kanaatine vardım ve alpine image&rsquo;ları kullanmaya başladım.</p>
 <h3 id="dockerfile">Dockerfile</h3>
-<p>Uygulamam ruby 2.4.3 ile yazıldı. O yüzden Docker image'ım <code>ruby:2.4.3-alpine3.7</code> olacak. Uygulamamın root dizininde aşağıdaki gibi bir dosya oluşturuyorum.</p>
+<p>Uygulamam ruby 2.4.3 ile yazıldı. O yüzden Docker image&rsquo;ım <code>ruby:2.4.3-alpine3.7</code> olacak. Uygulamamın root dizininde aşağıdaki gibi bir dosya oluşturuyorum.</p>
 <p>./Dockerfile</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#00a8c8">FROM</span><span style="color:#d88200"> ruby:2.4.3-alpine3.7</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010">
@@ -55,7 +55,7 @@
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#00a8c8">COPY</span> . /project<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#00a8c8">CMD</span> <span style="color:#111">[</span><span style="color:#d88200">&#34;bundle&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;exec&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;rails&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;server&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;-p 3000&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;-b 0.0.0.0&#34;</span><span style="color:#111">]</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>Dockerfile yazıldıktan sonra proje dizinimde <code>docker build .</code> komutunu çalıştırınca docker image'ının ilk halini oluşturdum. Bunu aşağıdaki komutla görebiliriz.</p>
+</span></code></pre></div><p>Dockerfile yazıldıktan sonra proje dizinimde <code>docker build .</code> komutunu çalıştırınca docker image&rsquo;ının ilk halini oluşturdum. Bunu aşağıdaki komutla görebiliriz.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-zsh" data-lang="zsh">~/dev/rails-docker
 $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
@@ -95,7 +95,7 @@ COPY Gemfile Gemfile.lock /project/
 RUN bundle install -j <span style="color:#00a8c8">$(</span>getconf _NPROCESSORS_ONLN<span style="color:#00a8c8">)</span> --no-deployment
 
 ...
-</code></pre></div><p>Yukarıdaki şekilde <code>bundle install</code> ile Gemfile'ımızdaki gem&rsquo;leri kurduk. Uygulamam birden fazla servis kullanacağı için(<code>postgresql</code>, <code>redis</code>, <code>sidekiq</code>, <code>web</code>) Dockerfile'ın olduğu dizinde <code>docker-compose.yml</code> oluşturacağım.</p>
+</code></pre></div><p>Yukarıdaki şekilde <code>bundle install</code> ile Gemfile&rsquo;ımızdaki gem&rsquo;leri kurduk. Uygulamam birden fazla servis kullanacağı için(<code>postgresql</code>, <code>redis</code>, <code>sidekiq</code>, <code>web</code>) Dockerfile&rsquo;ın olduğu dizinde <code>docker-compose.yml</code> oluşturacağım.</p>
 <h3 id="docker-composeyml">docker-compose.yml</h3>
 <p>En basit haliyle postgresql ve web uygulamamız için iki tane servisi olan bir docker-compose.yml dosyası hazırladım.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-yaml" data-lang="yaml"><span style="color:#00a8c8">version</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;3&#39;</span>
@@ -120,7 +120,7 @@ RUN bundle install -j <span style="color:#00a8c8">$(</span>getconf _NPROCESSORS_
       - <span style="color:#d88200">&#34;3000:3000&#34;</span>
     <span style="color:#00a8c8">volumes</span><span style="color:#111">:</span>
       - .<span style="color:#111">:</span>/project
-</code></pre></div><p>Yukarıdaki <code>app</code> bloğunda <code>env_file</code> diye belirttiğim environment değerlerini saklayacak bir production(<code>.env.production</code>) environment'ı oluşturdum. Uygulamamızın ihtiyaç duyduğu diğer</p>
+</code></pre></div><p>Yukarıdaki <code>app</code> bloğunda <code>env_file</code> diye belirttiğim environment değerlerini saklayacak bir production(<code>.env.production</code>) environment&rsquo;ı oluşturdum. Uygulamamızın ihtiyaç duyduğu diğer</p>
 <pre><code class="language-env" data-lang="env">PORT=3000
 RAILS_ENV=production
 RAILS_SERVE_STATIC_FILES=true
@@ -164,7 +164,7 @@ $ docker-compose run <span style="color:#f92672">[</span>SERVIS_ADI<span style="
 </code></pre></div><p>olacak. Ve artık:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-zsh" data-lang="zsh">~/dev/rails-docker
 $ docker-compose up
-</code></pre></div><p>dediğimizde localhost:3000 adresinde uygulamamız production environment'ı ile ayağa kalkacak.</p>
+</code></pre></div><p>dediğimizde localhost:3000 adresinde uygulamamız production environment&rsquo;ı ile ayağa kalkacak.</p>
 <p>Bir sonraki bölümde görüşmek üzere.</p>
 
         </article>

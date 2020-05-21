@@ -38,7 +38,7 @@
   <span style="color:#111">{</span><span style="color:#d88200">:guardian</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;~&gt; 1.2&#34;</span><span style="color:#111">}</span>
   <span style="color:#75715e"># ...</span>
 <span style="color:#111">end</span>
-</code></pre></div><p><code>mix deps.get</code> diyerek guardian'ı projemize ekliyoruz. Dileyen <a href="https://github.com/ueberauth/guardian/blob/master/guides/tutorial/start-tutorial.md" target="_blank">şuraya da</a> bakabilir.</p>
+</code></pre></div><p><code>mix deps.get</code> diyerek guardian&rsquo;ı projemize ekliyoruz. Dileyen <a href="https://github.com/ueberauth/guardian/blob/master/guides/tutorial/start-tutorial.md" target="_blank">şuraya da</a> bakabilir.</p>
 <p>Guardian bize JWT token üretme imkanı tanıyacak, bunun için ufak bir konfigürasyon yapmakta fayda var. <code>config/config.exs</code> dosyamıza aşağıdaki konfigürasyonu ekleyelim.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-ex" data-lang="ex"><span style="color:#75715e"># ...</span>
 <span style="color:#111">config</span> <span style="color:#d88200">:app</span><span style="color:#111">,</span> <span style="color:#75af00">App.Auth.Guardian</span><span style="color:#111">,</span>
@@ -67,7 +67,7 @@
     <span style="color:#111">resources</span> <span style="color:#d88200">&#34;/users&#34;</span><span style="color:#111">,</span> <span style="color:#75af00">UserController</span><span style="color:#111">,</span> <span style="color:#d88200">except</span><span style="color:#111">:</span> <span style="color:#111">[</span><span style="color:#d88200">:new</span><span style="color:#111">,</span> <span style="color:#d88200">:edit</span><span style="color:#111">]</span>
   <span style="color:#111">end</span>
 <span style="color:#111">end</span>
-</code></pre></div><p>Bir önceki yazıda, <code>resources &quot;/users&quot;</code> resource&rsquo;unu sadece <code>api</code> pipeline'ından geçirmiştik, şimdi bu resource rotasını yine <code>/api</code> scope&rsquo;u içinde kalarak <code>pipe_through [:api, :ensure_auth]</code> pipeline&rsquo;larından geçireceğiz. <code>:ensure_auth</code> pipeline'ında <code>App.Auth.Guardian.Pipeline</code> adında bir plug'ın varlığından bahsettik. <code>lib/app/auth/guardian/pipeline.ex</code> path&rsquo;inde aynı isimle bir module tanımlayarak içeriğini aşağıdaki gibi yapalım.</p>
+</code></pre></div><p>Bir önceki yazıda, <code>resources &quot;/users&quot;</code> resource&rsquo;unu sadece <code>api</code> pipeline&rsquo;ından geçirmiştik, şimdi bu resource rotasını yine <code>/api</code> scope&rsquo;u içinde kalarak <code>pipe_through [:api, :ensure_auth]</code> pipeline&rsquo;larından geçireceğiz. <code>:ensure_auth</code> pipeline&rsquo;ında <code>App.Auth.Guardian.Pipeline</code> adında bir plug&rsquo;ın varlığından bahsettik. <code>lib/app/auth/guardian/pipeline.ex</code> path&rsquo;inde aynı isimle bir module tanımlayarak içeriğini aşağıdaki gibi yapalım.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-ex" data-lang="ex"><span style="color:#111">defmodule</span> <span style="color:#75af00">App.Auth.Guardian.Pipeline</span> <span style="color:#111">do</span>
   <span style="color:#111">use</span> <span style="color:#75af00">Guardian.Plug.Pipeline</span><span style="color:#111">,</span> <span style="color:#d88200">otp_app</span><span style="color:#111">:</span> <span style="color:#d88200">:app</span><span style="color:#111">,</span>
                               <span style="color:#d88200">module</span><span style="color:#111">:</span> <span style="color:#75af00">App.Auth.Guardian</span><span style="color:#111">,</span>
@@ -177,7 +177,7 @@ x-request-id: FZVsiSTULGUhyEwAAA3E
     <span style="color:#d88200">&#34;status&#34;</span>: <span style="color:#d88200">&#34;Unauthenticated&#34;</span>
   <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span>
-</code></pre></div><p>Gördüğünüz gibi <code>:ensure_auth</code> pipeline'ı yetkisiz erişimi engelledi. Önce gidip bir access token almamız gerekiyor. Bunu da aşağıdaki gibi deneyelim.</p>
+</code></pre></div><p>Gördüğünüz gibi <code>:ensure_auth</code> pipeline&rsquo;ı yetkisiz erişimi engelledi. Önce gidip bir access token almamız gerekiyor. Bunu da aşağıdaki gibi deneyelim.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-zsh" data-lang="zsh">http --form POST :4000/api/auth/sign_in <span style="color:#d88200">&#39;user[email]=muratbsts@gmail.com&#39;</span> <span style="color:#d88200">&#39;user[password]=password&#39;</span>
 HTTP/1.1 <span style="color:#ae81ff">200</span> OK
 cache-control: max-age<span style="color:#f92672">=</span>0, private, must-revalidate

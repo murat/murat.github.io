@@ -36,7 +36,7 @@ token ile oturum açmak için birkaç yol verilmiş. Ama <strong>API-only</stron
 </code></pre></div><p>Bu komut ile oluşturduğunuz rails uygulamasınında <strong>ApplicationController</strong> <strong><code>ActionController::Base</code></strong> sınıfından değil <strong><code>ActionController::API</code></strong> sınıfından extend edilmiş olacak ve içinde csrf_token kontrolü yapan <code>protect_from_forgery with: :exception</code> şeklindeki middleware olmayacak. <code>assets</code> dizini hiç olmayacak.
 <code>config/application.rb</code> içinde <code>config.api_only = true</code> şeklinde bir set göreceksiniz. <code>Gemfile</code> içinde sass, coffee, uglifier, jquery vb assetler ile alakalı hiç bir gem olmayacak.</p>
 <p>Öncelikle gerekli gemleri kuralım. API uygulamanıza farklı domainlerden erişim olacak ise rack-cors kuracağız. Authentication için devise + tiddle kullanacağız. Hazırsak başlayayım.
-Gemfile'ı aşağıdaki gibi düzenleyelim.</p>
+Gemfile&rsquo;ı aşağıdaki gibi düzenleyelim.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># Gemfile</span>
 gem <span style="color:#d88200">&#39;rack-cors&#39;</span>, :require <span style="color:#f92672">=</span>&gt; <span style="color:#d88200">&#39;rack/cors&#39;</span>
 
@@ -57,10 +57,10 @@ gem <span style="color:#d88200">&#39;tiddle&#39;</span>
   end
 end
 </code></pre></div><p>Bu kadar.. 😊</p>
-<h3 id="deviseı-hazırlayalım">Devise'ı hazırlayalım</h3>
+<h3 id="deviseı-hazırlayalım">Devise&rsquo;ı hazırlayalım</h3>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-zsh" data-lang="zsh">rails g devise:install
 rails g devise User
-</code></pre></div><p>API-only uygulamada tüm requestlerin sonucu json döneceği için devise'ı aşağıdaki şekilde yapılandırmalıyız.</p>
+</code></pre></div><p>API-only uygulamada tüm requestlerin sonucu json döneceği için devise&rsquo;ı aşağıdaki şekilde yapılandırmalıyız.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-zsh" data-lang="zsh"><span style="color:#75715e"># config/initializers/devise.rb</span>
 Devise.setup <span style="color:#00a8c8">do</span> <span style="color:#111">|</span>config<span style="color:#111">|</span>
     config.navigational_formats <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>

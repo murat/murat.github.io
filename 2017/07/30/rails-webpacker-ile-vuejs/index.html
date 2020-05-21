@@ -32,7 +32,7 @@
 <h1 id="projeyi-oluşturalım">Projeyi oluşturalım&hellip;</h1>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-zsh" data-lang="zsh">rails new webpacker-vue-example --webpack<span style="color:#f92672">=</span>vue -B
 <span style="color:#111">cd</span> webpacker-vue-example
-</code></pre></div><p>Kısa şekilde anlatmak gerekirse —webpack=vue ile projemizde vuejs kullanacağımızı söyledik ve webpacker bizim için gerekli tüm konfigurasyonları yaptı. Proje dizininde <code>npm install</code> ve ya <code>yarn install</code> diyerek webpacker'ın oluşturduğu <code>package.json</code> dosyasındaki bağımlılıkları kurduk.</p>
+</code></pre></div><p>Kısa şekilde anlatmak gerekirse —webpack=vue ile projemizde vuejs kullanacağımızı söyledik ve webpacker bizim için gerekli tüm konfigurasyonları yaptı. Proje dizininde <code>npm install</code> ve ya <code>yarn install</code> diyerek webpacker&rsquo;ın oluşturduğu <code>package.json</code> dosyasındaki bağımlılıkları kurduk.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-zsh" data-lang="zsh">bundle install
 rails g controller root home --skip-helper --skip-assets
 </code></pre></div><p>Örnek uygulamamızın giriş sayfası için root adında bir controller oluşturduk. Bu giriş sayfasında repo aramamızı sağlayan bir autocomplete componenti olacak. <code>config/routes.rb</code> dosyamıza uygulamamızın evini söyleyelim.</p>

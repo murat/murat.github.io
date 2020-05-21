@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/muratbastas
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://murat.github.io
+  * I am muratbastas (https://keybase.io/muratbastas) on keybase.
+  * I have a public key ASBYUiV5meDFH_lsNC2U_XBt6xOPHAMHHSsmXwQk4d64ggo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b70276eb8a08ef6c3f985e2f7e6007ab8ecb03a27d26b6b5014d343418f890ce0a",
+      "host": "keybase.io",
+      "kid": "01205852257999e0c51ff96c342d94fd706deb138f1c03071d2b265f0424e1deb8820a",
+      "uid": "ae875eb78c4897d710713768c3072b19",
+      "username": "muratbastas"
+    },
+    "merkle_root": {
+      "ctime": 1590047428,
+      "hash": "eca3070558d1fdffe61f11fa9f0c58bdf60edc38e28e3cfeea3b8ca64550909121f80545003baf8897756f7b4eb12b57008b8c41517a8b5d0ad82641d14b1130",
+      "hash_meta": "8d4c5182a70d7409125e604b49f1c8c367026710092b66079b96d1c13d9b4352",
+      "seqno": 16364721
+    },
+    "service": {
+      "entropy": "222zPcen/rcIdC9Ba2XqwlQp",
+      "hostname": "murat.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.2"
+  },
+  "ctime": 1590048276,
+  "expire_in": 504576000,
+  "prev": "ee661c3d795866cf02443edc12ab72e2e6006d2753b2f139d7e8bfeaacbdbd05",
+  "seqno": 92,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgWFIleZngxR/5bDQtlP1wbesTjxwDBx0rJl8EJOHeuIIKp3BheWxvYWTESpcCXMQg7mYcPXlYZs8CRD7cEqty4uYAbSdTsvE51+i/6qy9vQXEIDBIxGwg0i0RVY+SQprOqeOW/EkJXteTsq1RCeSpmrNGAgHCo3NpZ8RAWPAQZPgCGhaAih+5osT/BRnOAjD7sZasJH/BFduTd0MhtUi8BAopFAYT58Qfk8Q5Xsb2CG6rb6qwWSoS4Jm7CqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJtmOdewU6VVbBpCUKwpbJECBKp/3ltIOpoJ5DqoTDd3o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/muratbastas
+
+==================================================================
