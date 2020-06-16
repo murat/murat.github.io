@@ -48,6 +48,31 @@
 <article class="post-list">
     <div class="title-group">
         <div class="title">
+            <h1><a href="/2020/06/16/nas%C4%B1l-her-terminal-i%C3%A7in-ayr%C4%B1-zsh-prompt-kullan%C4%B1l%C4%B1r/">Nasıl: Her terminal için ayrı zsh prompt kullanılır?</a></h1>
+        </div>
+        
+        <div class="date"><h5>Jun 16, 2020</h5></div>
+        
+    </div class="title-group">
+
+    <div class="content">
+        Shell ortamı için zsh mı kullanıyorsunuz? Bir de powerlevel9(10)k mı seviyorsunuz? Ama vscode, idea ve terminal unicode karakterleri farklı mı render ediyor? O zaman size bir ipucu vereyim&hellip;
+Ben gnome terminal, vscode integrated terminal ve idea terminalleri kullanıyorum. Fakat her biri zsh prompt&rsquo;umda farklı şekilde render ediliyor. Hem de font birebir aynı olmasına rağmen. Bu durumda editor/ide lerin içinde çirkin bir terminal görmemek için şöyle bir çözüm buldum. ~/.zshrc dosyanızda aşağıdaki if koşulunu kullanarak ortamlarda farklı zsh promptları kullanmanız mümkün.
+        
+    </div>
+    
+        
+            <div class="read-more">
+                <a href="/2020/06/16/nas%C4%B1l-her-terminal-i%C3%A7in-ayr%C4%B1-zsh-prompt-kullan%C4%B1l%C4%B1r/">Read more ›</a>
+            </div>
+        
+    
+
+</article>
+
+<article class="post-list">
+    <div class="title-group">
+        <div class="title">
             <h1><a href="/2020/04/09/wsl2-i%C3%A7inde-linux-desktop-ortam%C4%B1-gtk-uygulamalar%C4%B1-ve-jetbrains-ideleri/">WSL2 içinde linux desktop ortamı, GTK uygulamaları ve JetBrains IDE&#39;leri</a></h1>
         </div>
         
@@ -315,34 +340,6 @@ Aşağıdaki komutu terminalimizde çalıştırarak bir phoenix projesi açalım
         
             <div class="read-more">
                 <a href="/2019/04/13/hepsine-h%C3%BCkmedecek-tek-versiyon-y%C3%B6neticisi-asdf/">Read more ›</a>
-            </div>
-        
-    
-
-</article>
-
-<article class="post-list">
-    <div class="title-group">
-        <div class="title">
-            <h1><a href="/2019/03/12/activerecord-performans-pratikleri/">ActiveRecord Performans Pratikleri</a></h1>
-        </div>
-        
-        <div class="date"><h5>Mar 12, 2019</h5></div>
-        
-    </div class="title-group">
-
-    <div class="content">
-        count, present? ve where metodlari yanlis kullanildiginda genellikle N+1 query problemine yol acar.
-.count pratikleri count metodu her zaman sql query atarak count almaya calisir, bu gereksiz sql querysinden kurtulmak icin asagidaki metodlari inceleyebiliriz.
-size
-size metodu basit bir ruby array countu calistirarak elimizdeki recordset te kac item oldugunu sayar. size attigimiz data eger bir active record relation collection&rsquo;u ise asagidaki implementasyona bakalim.
-# File activerecord/lib/active_record/relation.rb, line 210 def size loaded?
-        
-    </div>
-    
-        
-            <div class="read-more">
-                <a href="/2019/03/12/activerecord-performans-pratikleri/">Read more ›</a>
             </div>
         
     

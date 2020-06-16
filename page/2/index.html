@@ -28,6 +28,34 @@
 <article class="post-list">
     <div class="title-group">
         <div class="title">
+            <h1><a href="/2019/03/12/activerecord-performans-pratikleri/">ActiveRecord Performans Pratikleri</a></h1>
+        </div>
+        
+        <div class="date"><h5>Mar 12, 2019</h5></div>
+        
+    </div class="title-group">
+
+    <div class="content">
+        count, present? ve where metodlari yanlis kullanildiginda genellikle N+1 query problemine yol acar.
+.count pratikleri count metodu her zaman sql query atarak count almaya calisir, bu gereksiz sql querysinden kurtulmak icin asagidaki metodlari inceleyebiliriz.
+size
+size metodu basit bir ruby array countu calistirarak elimizdeki recordset te kac item oldugunu sayar. size attigimiz data eger bir active record relation collection&rsquo;u ise asagidaki implementasyona bakalim.
+# File activerecord/lib/active_record/relation.rb, line 210 def size loaded?
+        
+    </div>
+    
+        
+            <div class="read-more">
+                <a href="/2019/03/12/activerecord-performans-pratikleri/">Read more ›</a>
+            </div>
+        
+    
+
+</article>
+
+<article class="post-list">
+    <div class="title-group">
+        <div class="title">
             <h1><a href="/2018/03/04/ruby-on-rails-ve-docker/">Ruby on Rails ve Docker</a></h1>
         </div>
         
@@ -71,31 +99,6 @@ $ gst Git status a bakacaktım ama 😏
         
             <div class="read-more">
                 <a href="/2017/09/02/alias-ne-i%C5%9F-yap%C4%B1yor/">Read more ›</a>
-            </div>
-        
-    
-
-</article>
-
-<article class="post-list">
-    <div class="title-group">
-        <div class="title">
-            <h1><a href="/2017/09/02/nas%C4%B1l-her-terminal-i%C3%A7in-ayr%C4%B1-zsh-prompt-kullan%C4%B1l%C4%B1r/">Nasıl: Her terminal için ayrı zsh prompt kullanılır?</a></h1>
-        </div>
-        
-        <div class="date"><h5>Sep 02, 2017</h5></div>
-        
-    </div class="title-group">
-
-    <div class="content">
-        Shell ortamı için zsh mı kullanıyorsunuz? Bir de powerlevel9(10)k mı seviyorsunuz? Ama vscode, idea ve terminal unicode karakterleri farklı mı render ediyor? O zaman size bir ipucu vereyim&hellip;
-Ben gnome terminal, vscode integrated terminal ve idea terminalleri kullanıyorum. Fakat her biri zsh prompt&rsquo;umda farklı şekilde render ediliyor. Hem de font birebir aynı olmasına rağmen. Bu durumda editor/ide lerin içinde çirkin bir terminal görmemek için şöyle bir çözüm buldum. ~/.zshrc dosyanızda aşağıdaki if koşulunu kullanarak ortamlarda farklı zsh promptları kullanmanız mümkün.
-        
-    </div>
-    
-        
-            <div class="read-more">
-                <a href="/2017/09/02/nas%C4%B1l-her-terminal-i%C3%A7in-ayr%C4%B1-zsh-prompt-kullan%C4%B1l%C4%B1r/">Read more ›</a>
             </div>
         
     

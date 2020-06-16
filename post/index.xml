@@ -6,10 +6,20 @@
     <description>Recent content in Posts on muratbastas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Apr 2020 21:01:05 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2020 12:27:12 +3000</lastBuildDate>
     
 	<atom:link href="https://murat.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nasıl: Her terminal için ayrı zsh prompt kullanılır?</title>
+      <link>https://murat.github.io/2020/06/16/nas%C4%B1l-her-terminal-i%C3%A7in-ayr%C4%B1-zsh-prompt-kullan%C4%B1l%C4%B1r/</link>
+      <pubDate>Tue, 16 Jun 2020 12:27:12 +3000</pubDate>
+      
+      <guid>https://murat.github.io/2020/06/16/nas%C4%B1l-her-terminal-i%C3%A7in-ayr%C4%B1-zsh-prompt-kullan%C4%B1l%C4%B1r/</guid>
+      <description>Shell ortamı için zsh mı kullanıyorsunuz? Bir de powerlevel9(10)k mı seviyorsunuz? Ama vscode, idea ve terminal unicode karakterleri farklı mı render ediyor? O zaman size bir ipucu vereyim&amp;hellip;
+Ben gnome terminal, vscode integrated terminal ve idea terminalleri kullanıyorum. Fakat her biri zsh prompt&amp;rsquo;umda farklı şekilde render ediliyor. Hem de font birebir aynı olmasına rağmen. Bu durumda editor/ide lerin içinde çirkin bir terminal görmemek için şöyle bir çözüm buldum. ~/.zshrc dosyanızda aşağıdaki if koşulunu kullanarak ortamlarda farklı zsh promptları kullanmanız mümkün.</description>
+    </item>
     
     <item>
       <title>WSL2 içinde linux desktop ortamı, GTK uygulamaları ve JetBrains IDE&#39;leri</title>
@@ -155,16 +165,6 @@ Bu blog üç bölümden oluşacak. İlk bölümü başlıktaki şekilde bir Rail
 Örneğin ben Yan Pritzker&amp;lsquo;e ait olan YADR(Yet another dotfiles repo) deposunu kullanıyorum. Neden bunu kullanıyorsun diyen olursa cevabı Prezto. Her neyse, bildiğiniz gibi bu tür shell konfigurasyonlarında tonla ayar, eklenti, hack ve hayatımızı kolaylaştıran alias&amp;rsquo;lar var.
 Bu alias&amp;rsquo;ları biz tanımlamadığımız için bazen benim gibi şuna benzer ikilemler yaşayabilirsiniz.
 $ gst Git status a bakacaktım ama 😏</description>
-    </item>
-    
-    <item>
-      <title>Nasıl: Her terminal için ayrı zsh prompt kullanılır?</title>
-      <link>https://murat.github.io/2017/09/02/nas%C4%B1l-her-terminal-i%C3%A7in-ayr%C4%B1-zsh-prompt-kullan%C4%B1l%C4%B1r/</link>
-      <pubDate>Sat, 02 Sep 2017 10:57:12 +3000</pubDate>
-      
-      <guid>https://murat.github.io/2017/09/02/nas%C4%B1l-her-terminal-i%C3%A7in-ayr%C4%B1-zsh-prompt-kullan%C4%B1l%C4%B1r/</guid>
-      <description>Shell ortamı için zsh mı kullanıyorsunuz? Bir de powerlevel9(10)k mı seviyorsunuz? Ama vscode, idea ve terminal unicode karakterleri farklı mı render ediyor? O zaman size bir ipucu vereyim&amp;hellip;
-Ben gnome terminal, vscode integrated terminal ve idea terminalleri kullanıyorum. Fakat her biri zsh prompt&amp;rsquo;umda farklı şekilde render ediliyor. Hem de font birebir aynı olmasına rağmen. Bu durumda editor/ide lerin içinde çirkin bir terminal görmemek için şöyle bir çözüm buldum. ~/.zshrc dosyanızda aşağıdaki if koşulunu kullanarak ortamlarda farklı zsh promptları kullanmanız mümkün.</description>
     </item>
     
     <item>
