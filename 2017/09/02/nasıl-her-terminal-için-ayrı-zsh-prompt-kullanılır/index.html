@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nasıl: Her terminal için ayrı zsh prompt kullanılır? · muratbastas</title>
+
+
+
+<link rel="stylesheet" href="/css/rocinante.css" />
+
+
+
+<body>
+    <header><h2>
+  
+    <a href="https://murat.github.io">‹ muratbastas</a>
+  
+</h2>
+</header>
+    <main>
+
+    <div class="post">
+        <div class="title-group">
+            <div class="title">
+                <h1>Nasıl: Her terminal için ayrı zsh prompt kullanılır?</h1>
+            </div>
+            <div class="date"><h5>Sep 02, 2017</h5></div>
+        </div>
+        <article class="content">
+            <p>Shell ortamı için zsh mı kullanıyorsunuz? Bir de powerlevel9(10)k mı seviyorsunuz? Ama vscode, idea ve terminal unicode karakterleri farklı mı render ediyor? O zaman size bir ipucu vereyim&hellip;</p>
+<p>Ben gnome terminal, vscode integrated terminal ve idea terminalleri kullanıyorum. Fakat her biri zsh prompt&rsquo;umda farklı şekilde render ediliyor.
+Hem de font birebir aynı olmasına rağmen. Bu durumda editor/ide lerin içinde çirkin bir terminal görmemek için şöyle bir çözüm buldum. ~/.zshrc dosyanızda aşağıdaki if koşulunu kullanarak ortamlarda farklı zsh promptları kullanmanız mümkün.</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-shell" data-lang="shell"><span style="color:#00a8c8">if</span> <span style="color:#f92672">[[</span> <span style="color:#d88200">&#34;</span><span style="color:#111">$TERM_PROGRAM</span><span style="color:#d88200">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#d88200">&#34;vscode&#34;</span> <span style="color:#f92672">]]</span><span style="color:#111">;</span> <span style="color:#00a8c8">then</span>
+    <span style="color:#111">source</span> ~/.vscode-icin-prompt.zsh
+<span style="color:#00a8c8">elif</span> <span style="color:#f92672">[[</span> <span style="color:#111">$__INTELLIJ_COMMAND_HISTFILE__</span> <span style="color:#f92672">]]</span><span style="color:#111">;</span> <span style="color:#00a8c8">then</span>
+    <span style="color:#111">source</span> ~/.idea-icin-prompt.zsh
+<span style="color:#00a8c8">else</span>
+    <span style="color:#111">source</span> ~/.diger-terminal-icin-prompt.zsh
+<span style="color:#00a8c8">fi</span>
+</code></pre></div>
+        </article>
+        
+    </article>
+
+
+    </main>
+    <footer>
+  <div class="content-container">
+    <div class="content">Murat Bastas | Software Developer <a href="https://vispera.co" target="_blank">@Vispera</a>.
+
+
+  <p class="horizontal-links"><a href="/resume.pdf"
+       
+       
+      >Resume</a><a href="/contact"
+       
+        class="email-hook" id="about-email" title="Click to show email" 
+      >Email</a></p>
+
+  <p class="horizontal-links"><a href="https://github.com/murat"
+        target="_blank" 
+       
+      >Github</a><a href="https://twitter.com/muratbastas"
+        target="_blank" 
+       
+      >Twitter</a><a href="https://linkedin.com/in/muratbastas"
+        target="_blank" 
+       
+      >LinkedIn</a></p>
+
+</div>
+  </div>
+</footer>
+    
+    <script>
+      const emailId = atob("");
+    </script>
+    <script src="/js/rocinante.min.js"></script>
+  </body>
+</html>
